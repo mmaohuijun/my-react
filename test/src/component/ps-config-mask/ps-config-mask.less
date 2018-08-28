@@ -1,0 +1,25 @@
+.config-mask{
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(132, 132, 136, .63);
+  z-index: 99;
+
+  .config-modal{
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -202.5px;
+
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #config-mask{
+    .config-modal{
+      margin-left: -216px;
+      margin-top: -267.5px;
+    }
+  }
+}
