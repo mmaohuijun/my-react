@@ -14,15 +14,15 @@ const CounterStore = Object.assign({}, EventEmitter.prototype, {
     getCounterValues: function(){
         return counterValues;
     },
-    // 广播特定事件
+
     emitChange: function(){
         this.emit(CHANGE_EVENT);
     },
-    // 增加 挂在该事件上的 处理函数
+
     addChangeListener: function(callback){
         this.on(CHANGE_EVENT, callback);
     },
-    // 移除 特定事件上的 处理函数
+    // 锟狡筹拷 锟截讹拷锟铰硷拷锟较碉拷 锟斤拷锟斤拷锟斤拷
     removeChangeListener: function(callback){
         this.remove(CHANGE_EVENT, callback);
     }
