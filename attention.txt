@@ -1,0 +1,18 @@
+1.添加路由配置(config/router.config.js)
+路由管理 通过约定的语法根据在 router.config.js 中配置路由
+name 和 icon分别代表生成菜单项的图标和文本。 
+2.增加页面（容器组件）
+配置相关locales
+在page下 新建一个新的文件夹 集中管理页面及相关样式
+依据antd组件文档及业务要求构建静态页面
+3.定义接口
+在api.js下 定义相关接口
+4.定义models
+定义state effects reducers 
+5.在页面中连接 组件和model
+通过@connect 连接component 和 model
+ui的交互dispatch action 更改视图
+6.build
+npm run build
+在根目录中生成dist文件夹 生成.js .css 和 index.html文件
+7.deploy
